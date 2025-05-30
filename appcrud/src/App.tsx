@@ -9,13 +9,14 @@ import { NuevaMoto } from "./components/NuevoMoto"
 import Dashboard from "./components/DashboardMecanico"
 import { EditarMoto } from "./components/EditarMoto"
 import { NuevoServicio } from "./components/NuevoServicio"
+import { ListaEmpleados } from "./components/ListaEmpleados"
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+       <Route path="/" element={<Dashboard />} />
         <Route path="/listacliente" element={<ListaCliente />} />
         <Route path="/editarcliente/:id" element={<EditarCliente />} />
         <Route path="/nuevocliente" element={<NuevoCliente />} />
@@ -24,6 +25,7 @@ function App() {
         <Route path="/editarmoto/:id" element={<EditarMoto />} />
         <Route path="/listaservicio" element={<ListaServicio />} />
         <Route path="/nuevoservicio/:id" element={<NuevoServicio/>} />
+        <Route path="/listaEmpleado" element={<ListaEmpleados />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
