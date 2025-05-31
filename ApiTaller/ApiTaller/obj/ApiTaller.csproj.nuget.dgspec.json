@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\ApiTaller.csproj": {}
+    "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\ApiTaller.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\ApiTaller.csproj": {
+    "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\ApiTaller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\ApiTaller.csproj",
+        "projectUniqueName": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\ApiTaller.csproj",
         "projectName": "ApiTaller",
-        "projectPath": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\ApiTaller.csproj",
+        "projectPath": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\ApiTaller.csproj",
         "packagesPath": "C:\\Users\\YEIMI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\obj\\",
+        "outputPath": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

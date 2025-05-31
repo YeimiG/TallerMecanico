@@ -1,93 +1,93 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\",
+  "WorkspaceRootPath": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\controllers\\serviciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\controllers\\serviciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\controllers\\serviciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\dpt\\reportefacturasdpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\dpt\\reportefacturasdpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\dpt\\reportefacturasdpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\dpt\\clientedpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\dpt\\clientedpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\dpt\\clientedpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\dpt\\cargodpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\dpt\\cargodpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\dpt\\cargodpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\dpt\\motocicletadpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\dpt\\motocicletadpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\dpt\\motocicletadpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\dpt\\empleadodpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\dpt\\empleadodpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\dpt\\empleadodpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\dpt\\facturadpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\dpt\\facturadpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\dpt\\facturadpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\models\\servicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\models\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\dpt\\serviciodpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\dpt\\serviciodpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\dpt\\serviciodpto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\models\\cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\models\\cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\models\\cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\controllers\\motocicletacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\controllers\\motocicletacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\controllers\\motocicletacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\controllers\\cargocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\controllers\\cargocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\controllers\\cargocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\models\\motocicletum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\models\\motocicletum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\models\\motocicletum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\models\\sistemamecanicocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\models\\sistemamecanicocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\models\\sistemamecanicocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\source\\repos\\apitaller\\apitaller\\apitaller.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|c:\\users\\yeimi\\documents\\github\\tallermecanico\\apitaller\\apitaller\\apitaller.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E84BB8A0-CFFA-4E31-B996-E5912B6343B8}|ApiTaller\\ApiTaller.csproj|solutionrelative:apitaller\\apitaller.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -192,76 +192,71 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ReporteFacturasDpto.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\ReporteFacturasDpto.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\ReporteFacturasDpto.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Dpt\\ReporteFacturasDpto.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\ReporteFacturasDpto.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\ReporteFacturasDpto.cs",
               "RelativeToolTip": "ApiTaller\\Dpt\\ReporteFacturasDpto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T17:23:33.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T17:23:33.319Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "MotocicletaDpto.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\MotocicletaDpto.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\MotocicletaDpto.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Dpt\\MotocicletaDpto.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\MotocicletaDpto.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\MotocicletaDpto.cs",
               "RelativeToolTip": "ApiTaller\\Dpt\\MotocicletaDpto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T19:43:03.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T19:43:03.75Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "CargoDpto.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\CargoDpto.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\CargoDpto.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Dpt\\CargoDpto.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\CargoDpto.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\CargoDpto.cs",
               "RelativeToolTip": "ApiTaller\\Dpt\\CargoDpto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:36:17.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T14:36:17.413Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ClienteDpto.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\ClienteDpto.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\ClienteDpto.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Dpt\\ClienteDpto.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\ClienteDpto.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\ClienteDpto.cs",
               "RelativeToolTip": "ApiTaller\\Dpt\\ClienteDpto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T17:57:54.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T17:57:54.364Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Program.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Program.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Program.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Program.cs",
               "RelativeToolTip": "ApiTaller\\Program.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAIwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T06:04:59.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T06:04:59.446Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ServicioController.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\ServicioController.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\ServicioController.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Controllers\\ServicioController.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\ServicioController.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\ServicioController.cs",
               "RelativeToolTip": "ApiTaller\\Controllers\\ServicioController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA0wBsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAwBcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T05:51:24.833Z",
               "EditorCaption": ""
@@ -270,74 +265,69 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "EmpleadoDpto.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\EmpleadoDpto.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\EmpleadoDpto.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Dpt\\EmpleadoDpto.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\EmpleadoDpto.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\EmpleadoDpto.cs",
               "RelativeToolTip": "ApiTaller\\Dpt\\EmpleadoDpto.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAQwBAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:24:15.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T14:24:15.856Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "FacturaDpto.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\FacturaDpto.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\FacturaDpto.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Dpt\\FacturaDpto.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\FacturaDpto.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\FacturaDpto.cs",
               "RelativeToolTip": "ApiTaller\\Dpt\\FacturaDpto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:36:04.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T14:36:04.571Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Servicio.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Servicio.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Servicio.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Models\\Servicio.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Servicio.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Servicio.cs",
               "RelativeToolTip": "ApiTaller\\Models\\Servicio.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwBUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:32:15.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T14:32:15.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "EmpleadoController.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\EmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\EmpleadoController.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Controllers\\EmpleadoController.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\EmpleadoController.cs",
               "RelativeToolTip": "ApiTaller\\Controllers\\EmpleadoController.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAkwD8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T05:50:55.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T05:50:55.682Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Factura.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Factura.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Factura.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Models\\Factura.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Factura.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Factura.cs",
               "RelativeToolTip": "ApiTaller\\Models\\Factura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:35:19.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T14:35:19.006Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "Cargo.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Cargo.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Cargo.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Models\\Cargo.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Cargo.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Cargo.cs",
               "RelativeToolTip": "ApiTaller\\Models\\Cargo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -347,48 +337,45 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Empleado.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Empleado.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Models\\Empleado.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Empleado.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Empleado.cs",
               "RelativeToolTip": "ApiTaller\\Models\\Empleado.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAUwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:24:20.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T14:24:20.13Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "FacturaController.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\FacturaController.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\FacturaController.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Controllers\\FacturaController.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\FacturaController.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\FacturaController.cs",
               "RelativeToolTip": "ApiTaller\\Controllers\\FacturaController.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAiwHwAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:39:35.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T14:39:35.253Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "ServicioDpto.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\ServicioDpto.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\ServicioDpto.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Dpt\\ServicioDpto.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Dpt\\ServicioDpto.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Dpt\\ServicioDpto.cs",
               "RelativeToolTip": "ApiTaller\\Dpt\\ServicioDpto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:32:10.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T14:32:10.047Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "MotocicletaController.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\MotocicletaController.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\MotocicletaController.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Controllers\\MotocicletaController.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\MotocicletaController.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\MotocicletaController.cs",
               "RelativeToolTip": "ApiTaller\\Controllers\\MotocicletaController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAmwDcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -398,9 +385,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "CargoController.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\CargoController.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\CargoController.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Controllers\\CargoController.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\CargoController.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\CargoController.cs",
               "RelativeToolTip": "ApiTaller\\Controllers\\CargoController.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAIwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -410,9 +397,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "Motocicletum.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Motocicletum.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Motocicletum.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Models\\Motocicletum.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Motocicletum.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Motocicletum.cs",
               "RelativeToolTip": "ApiTaller\\Models\\Motocicletum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -422,9 +409,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\Cliente.cs",
               "RelativeToolTip": "ApiTaller\\Models\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -434,9 +421,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "ApiTaller\\Controllers\\ClienteController.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAADwv20AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -446,9 +433,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "SistemaMecanicoContext.cs",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\SistemaMecanicoContext.cs",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\SistemaMecanicoContext.cs",
               "RelativeDocumentMoniker": "ApiTaller\\Models\\SistemaMecanicoContext.cs",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\Models\\SistemaMecanicoContext.cs",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\Models\\SistemaMecanicoContext.cs",
               "RelativeToolTip": "ApiTaller\\Models\\SistemaMecanicoContext.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -458,9 +445,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "ApiTaller.csproj",
-              "DocumentMoniker": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\ApiTaller.csproj",
+              "DocumentMoniker": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\ApiTaller.csproj",
               "RelativeDocumentMoniker": "ApiTaller\\ApiTaller.csproj",
-              "ToolTip": "C:\\Users\\YEIMI\\source\\repos\\ApiTaller\\ApiTaller\\ApiTaller.csproj",
+              "ToolTip": "C:\\Users\\YEIMI\\Documents\\GitHub\\TallerMecanico\\ApiTaller\\ApiTaller\\ApiTaller.csproj",
               "RelativeToolTip": "ApiTaller\\ApiTaller.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

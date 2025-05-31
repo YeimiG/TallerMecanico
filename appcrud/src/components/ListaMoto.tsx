@@ -31,8 +31,8 @@ export function ListaMoto() {
             confirmButtonText: "Sí, eliminar"
         }).then(async (result) => {
             if (result.isConfirmed) {
-                const response = await fetch(`${appsettings.apiUrl}Motocicleta/Eliminar/${id}`, { 
-                    method: "DELETE" 
+                const response = await fetch(`${appsettings.apiUrl}Motocicleta/Eliminar/${id}`, {
+                    method: "DELETE"
                 })
                 if (response.ok) await obtenerMotos()
             }
@@ -67,20 +67,20 @@ export function ListaMoto() {
                                     <td>{item.anio}</td>
                                     <td>{item.idCliente ?? "Sin asignar"}</td>
                                     <td>
-                                        <Link 
-                                            className="btn btn-primary me-2" 
+                                        <Link
+                                            className="btn btn-primary me-2"
                                             to={`/editarmoto/${item.idMotocicleta}`}
                                         >
                                             Editar
                                         </Link>
-                                        <Button 
-                                            color="danger" 
+                                        <Button
+                                            color="danger"
                                             onClick={() => eliminar(item.idMotocicleta!)}
                                         >
                                             Eliminar
                                         </Button>
-                                        <Link 
-                                            className="btn btn-info ms-2" 
+                                        <Link
+                                            className="btn btn-info ms-2"
                                             to={`/nuevoservicio/${item.idMotocicleta}`}
                                         >
                                             Agregar Servicio

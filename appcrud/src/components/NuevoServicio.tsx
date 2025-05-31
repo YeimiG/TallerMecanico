@@ -3,23 +3,16 @@ import { useNavigate, useParams } from "react-router-dom"
 import Swal from "sweetalert2"
 import { type IServicio } from "../Interfaces/IServicio"
 import {
-    Container,
-    Row,
-    Col,
-    Form,
-    FormGroup,
-    Label,
-    Input,
-    Button
+    Container, Row, Col, Form, FormGroup, Label, Input, Button
 } from "reactstrap"
 import { appsettings } from "../settings/appsettings"
 
 const initialServicio: IServicio = {
-    servicio: "",
+    servicio1: "",
     precio: 0,
     fechaEntrada: new Date(),
-    idMotocicleta: undefined,
-    idEmpleado: undefined,
+    idMotocicleta: 0,
+    idEmpleado: 0,
     idServicio: 0
 }
 
@@ -38,29 +31,35 @@ export function NuevoServicio() {
         }
     }, [idMotocicleta])
 
-   useEffect(() => {
-    const fetchClientes = async () => {
-      try {
-        const response = await fetch(`${appsettings.apiUrl}Empleado/Lista`, {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
-          },
-        });
+    useEffect(() => {
+        const fetchEmpleados = async () => {
+            try {
+                const response = await fetch(`${appsettings.apiUrl}Empleado/Lista`, {
+                    headers: {
+                        Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
+                    },
+                })
 
-        if (!response.ok) {
-          throw new Error("No se pudieron cargar los empleados");
+                if (!response.ok) throw new Error("No se pudieron cargar los empleados")
+
+                const data = await response.json()
+                const empleadosFormateados = data.map((empleado: any) => ({
+                    idEmpleado: empleado.idEmpleado,
+                    nombreCompleto: `${empleado.nombres} ${empleado.apellidos}`
+                }))
+                setEmpleados(empleadosFormateados)
+            } catch (error) {
+                console.error("Error al cargar empleados:", error)
+                Swal.fire({
+                    title: "Error",
+                    text: "No se pudieron cargar los empleados",
+                    icon: "error"
+                })
+            }
         }
 
-        const data = await response.json();
-        console.log("Clientes cargados:", data); // Puedes quitarlo luego
-        setEmpleados(data);
-      } catch (error) {
-        console.error("Error al cargar clientes:", error);
-      }
-    };
-
-    fetchClientes();
-  }, []);
+        fetchEmpleados()
+    }, [])
 
     const handleInputChange = (event: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = event.target
@@ -83,7 +82,7 @@ export function NuevoServicio() {
         e.preventDefault()
 
         try {
-            if (!servicio.servicio || !servicio.fechaEntrada || !servicio.idMotocicleta) {
+            if (!servicio.servicio1 || !servicio.idMotocicleta || !servicio.idEmpleado) {
                 await Swal.fire({
                     title: "Campos incompletos",
                     text: "Por favor complete todos los campos requeridos",
@@ -92,13 +91,21 @@ export function NuevoServicio() {
                 return
             }
 
+            const servicioToSend = {
+                Servicio1: servicio.servicio1,
+                Precio: servicio.precio,
+                FechaEntrada: servicio.fechaEntrada.toISOString(),
+                IdMotocicleta: servicio.idMotocicleta,
+                IdEmpleado: servicio.idEmpleado
+            }
+
             const response = await fetch(`${appsettings.apiUrl}Servicio/Nuevo`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${localStorage.getItem('token') || ''}`
                 },
-                body: JSON.stringify(servicio)
+                body: JSON.stringify(servicioToSend)
             })
 
             if (!response.ok) {
@@ -139,9 +146,9 @@ export function NuevoServicio() {
                             <Label>Nombre del Servicio</Label>
                             <Input
                                 type="text"
-                                name="servicio"
+                                name="servicio1"
                                 onChange={handleInputChange}
-                                value={servicio.servicio}
+                                value={servicio.servicio1}
                                 required
                             />
                         </FormGroup>
@@ -153,6 +160,8 @@ export function NuevoServicio() {
                                 onChange={handleInputChange}
                                 value={servicio.precio}
                                 step="0.01"
+                                min="0"
+                                required
                             />
                         </FormGroup>
                         <FormGroup>
@@ -171,8 +180,9 @@ export function NuevoServicio() {
                                 type="number"
                                 name="idMotocicleta"
                                 onChange={handleInputChange}
-                                value={servicio.idMotocicleta || ""}
+                                value={servicio.idMotocicleta}
                                 readOnly={!!idMotocicleta}
+                                required
                             />
                         </FormGroup>
                         <FormGroup>
@@ -182,7 +192,7 @@ export function NuevoServicio() {
                                 name="idEmpleado"
                                 id="idEmpleado"
                                 onChange={handleInputChange}
-                                value={servicio.idEmpleado ?? ""}
+                                value={servicio.idEmpleado}
                                 required
                             >
                                 <option value="">Seleccione el empleado</option>
