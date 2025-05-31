@@ -5,7 +5,7 @@ import Swal from "sweetalert2"
 import type { IEmpleados } from "../Interfaces/IEmpleados"
 import { Container, Row, Col, Table, Button } from "reactstrap"
 
-export function ListaEmpleados() {
+export function ListaEmpleado() {
     const [empleados, setEmpleados] = useState<IEmpleados[]>([])
 
     const obtenerEmpleados = async () => {
@@ -31,7 +31,9 @@ export function ListaEmpleados() {
             confirmButtonText: "Sí, eliminar"
         }).then(async (result) => {
             if (result.isConfirmed) {
-                const response = await fetch(`${appsettings.apiUrl}Empleado/Eliminar/${id}`, { method: "DELETE" })
+                const response = await fetch(`${appsettings.apiUrl}Empleado/Eliminar/${id}`, {
+                    method: "DELETE"
+                })
                 if (response.ok) await obtenerEmpleados()
             }
         })
@@ -43,7 +45,9 @@ export function ListaEmpleados() {
                 <Col sm={{ size: 10, offset: 1 }}>
                     <h4>Lista de Empleados</h4>
                     <hr />
-                    <Link className="btn btn-success mb-3" to="/nuevoempleado">Nuevo Empleado</Link>
+                    <Link className="btn btn-success mb-3" to="/nuevoempleado">
+                        Nuevo Empleado
+                    </Link>
 
                     <Table bordered hover responsive>
                         <thead>
@@ -53,24 +57,30 @@ export function ListaEmpleados() {
                                 <th>Edad</th>
                                 <th>DUI</th>
                                 <th>Teléfono</th>
-                                <th>Cargo</th>
+                                <th>ID Cargo</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             {empleados.map((item) => (
-                                <tr key={item.IdEmpleado}>
-                                    <td>{item.Nombres}</td>
-                                    <td>{item.Apellidos}</td>
-                                    <td>{item.Edad}</td>
-                                    <td>{item.Dui}</td>
+                                <tr key={item.idEmpleado}>
+                                    <td>{item.nombres}</td>
+                                    <td>{item.apellidos}</td>
+                                    <td>{item.edad}</td>
+                                    <td>{item.dui}</td>
                                     <td>{item.telefono}</td>
-                                    <td>{item.IdCargo}</td>
+                                    <td>{item.idCargo ?? "Sin asignar"}</td>
                                     <td>
-                                        <Link className="btn btn-primary me-2" to={`/editarempleado/${item.IdEmpleado}`}>
+                                        <Link
+                                            className="btn btn-primary me-2"
+                                            to={`/editarempleado/${item.idEmpleado}`}
+                                        >
                                             Editar
                                         </Link>
-                                        <Button color="danger" onClick={() => eliminar(item.IdEmpleado!)}>
+                                        <Button
+                                            color="danger"
+                                            onClick={() => eliminar(item.idEmpleado!)}
+                                        >
                                             Eliminar
                                         </Button>
                                     </td>
@@ -78,8 +88,16 @@ export function ListaEmpleados() {
                             ))}
                         </tbody>
                     </Table>
+                    <div className="mt-4 d-flex justify-content-end">
+                        <Link to="/" className="btn btn-success mb-3">
+                            Ir al Dashboard
+                        </Link>
+                    </div>
+
                 </Col>
             </Row>
+
+
         </Container>
     )
 }

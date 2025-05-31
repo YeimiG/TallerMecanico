@@ -7,12 +7,12 @@ import type { IEmpleados } from "../Interfaces/IEmpleados"
 import type { ICargo } from "../Interfaces/ICargo"
 
 const initialEmpleado: IEmpleados = {
-    Nombres: "",
-    Apellidos: "",
-    Edad: 0,
-    Dui: "",
+    nombres: "",
+    apellidos: "",
+    edad: 0,
+    dui: "",
     telefono: "",
-    IdCargo: undefined
+    idCargo: undefined
 }
 
 export function NuevoEmpleado() {
@@ -36,14 +36,14 @@ export function NuevoEmpleado() {
         const { name, value } = e.target
         setEmpleado(prev => ({
             ...prev,
-            [name]: name === "Edad" || name === "IdCargo" ? Number(value) : value
+            [name]: name === "edad" || name === "idCargo" ? Number(value) : value
         }))
     }
 
     const guardarEmpleado = async (e: FormEvent) => {
         e.preventDefault()
 
-        if (!empleado.Nombres || !empleado.Apellidos || !empleado.Dui || !empleado.telefono || !empleado.IdCargo) {
+        if (!empleado.nombres || !empleado.apellidos || !empleado.dui || !empleado.telefono || !empleado.idCargo) {
             await Swal.fire({
                 title: "Campos incompletos",
                 text: "Por favor complete todos los campos requeridos",
@@ -100,8 +100,8 @@ export function NuevoEmpleado() {
                             <Label>Nombres</Label>
                             <Input
                                 type="text"
-                                name="Nombres"
-                                value={empleado.Nombres}
+                                name="nombres"
+                                value={empleado.nombres}
                                 onChange={handleInputChange}
                                 required
                             />
@@ -110,8 +110,8 @@ export function NuevoEmpleado() {
                             <Label>Apellidos</Label>
                             <Input
                                 type="text"
-                                name="Apellidos"
-                                value={empleado.Apellidos}
+                                name="apellidos"
+                                value={empleado.apellidos}
                                 onChange={handleInputChange}
                                 required
                             />
@@ -120,8 +120,8 @@ export function NuevoEmpleado() {
                             <Label>Edad</Label>
                             <Input
                                 type="number"
-                                name="Edad"
-                                value={empleado.Edad}
+                                name="edad"
+                                value={empleado.edad}
                                 onChange={handleInputChange}
                                 required
                                 min={18}
@@ -131,8 +131,8 @@ export function NuevoEmpleado() {
                             <Label>DUI</Label>
                             <Input
                                 type="text"
-                                name="Dui"
-                                value={empleado.Dui}
+                                name="dui"
+                                value={empleado.dui}
                                 onChange={handleInputChange}
                                 required
                             />
@@ -151,8 +151,8 @@ export function NuevoEmpleado() {
                             <Label>Cargo</Label>
                             <Input
                                 type="select"
-                                name="IdCargo"
-                                value={empleado.IdCargo ?? ""}
+                                name="idCargo"
+                                value={empleado.idCargo ?? ""}
                                 onChange={handleInputChange}
                                 required
                             >

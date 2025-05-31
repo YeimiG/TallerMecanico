@@ -1,11 +1,11 @@
  export interface IEmpleados {
-    IdEmpleado?: number;
-    Nombres: string;
-    Apellidos: string;
-    Edad: number;
-    Dui: string;
+    idEmpleado?: number;
+    nombres: string;
+    apellidos: string;
+    edad: number;
+    dui: string;
     telefono: string;
-    IdCargo?: number;
+    idCargo?: number;
 }
  
  

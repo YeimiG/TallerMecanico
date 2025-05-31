@@ -9,10 +9,11 @@ import { NuevaMoto } from "./components/NuevoMoto"
 import Dashboard from "./components/DashboardMecanico"
 import { EditarMoto } from "./components/EditarMoto"
 import { NuevoServicio } from "./components/NuevoServicio"
-import { ListaEmpleados } from "./components/ListaEmpleados"
+import { ListaEmpleado } from "./components/ListaEmpleados"
 import { NuevoCargo } from "./components/NuevoCargo"
 import { ListaCargos } from "./components/ListaCargo"
 import { NuevoEmpleado } from "./components/NuevoEmpleado"
+import { ListaFactura } from "./components/ListaFactura"
 
 function App() {
 
@@ -27,11 +28,12 @@ function App() {
         <Route path="/nuevamoto" element={<NuevaMoto />} />
         <Route path="/editarmoto/:id" element={<EditarMoto />} />
         <Route path="/listaservicio" element={<ListaServicio />} />
-        <Route path="/nuevoservicio/:id" element={<NuevoServicio/>} />
-        <Route path="/listaEmpleado" element={<ListaEmpleados />} />
+        <Route path="/nuevoservicio" element={<NuevoServicio/>} />
+        <Route path="/listaEmpleado" element={<ListaEmpleado />} />
         <Route path="/nuevoempleado" element={<NuevoEmpleado />} />
         <Route path="/listaCargos" element={<ListaCargos />} />
         <Route path="/nuevocargo" element={<NuevoCargo />} />
+        <Route path="/listaFactura" element={<ListaFactura />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>

@@ -90,6 +90,11 @@ export function ListaMoto() {
                             ))}
                         </tbody>
                     </Table>
+                    <div className="mt-4 d-flex justify-content-end">
+                        <Link to="/" className="btn btn-success mb-3">
+                            Ir al Dashboard
+                        </Link>
+                    </div>
                 </Col>
             </Row>
         </Container>

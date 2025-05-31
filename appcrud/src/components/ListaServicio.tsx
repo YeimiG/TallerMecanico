@@ -18,11 +18,11 @@ export function ListaServicio() {
                     Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
                 },
             });
-            
+
             if (!response.ok) {
                 throw new Error("Error al cargar servicios");
             }
-            
+
             const data = await response.json();
             setServicios(data);
         } catch (error) {
@@ -54,23 +54,23 @@ export function ListaServicio() {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const response = await fetch(`${appsettings.apiUrl}Servicio/Eliminar/${id}`, { 
+                    const response = await fetch(`${appsettings.apiUrl}Servicio/Eliminar/${id}`, {
                         method: "DELETE",
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
                         },
                     });
-                    
+
                     if (!response.ok) {
                         throw new Error("Error al eliminar servicio");
                     }
-                    
+
                     await Swal.fire({
                         title: "Eliminado!",
                         text: "El servicio ha sido eliminado.",
                         icon: "success",
                     });
-                    
+
                     obtenerServicios();
                 } catch (error) {
                     Swal.fire({
@@ -111,6 +111,7 @@ export function ListaServicio() {
                                 <th>Precio</th>
                                 <th>Fecha de Entrada</th>
                                 <th>ID Motocicleta</th>
+                                <th>ID empleado</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -118,21 +119,22 @@ export function ListaServicio() {
                             {servicios.length > 0 ? (
                                 servicios.map((servicio) => (
                                     <tr key={servicio.idServicio}>
-                                        <td>{servicio.servicio}</td>
+                                        <td>{servicio.servicio1}</td>
                                         <td>{servicio.precio ? `$${servicio.precio.toFixed(2)}` : 'N/A'}</td>
                                         <td>
                                             {format(new Date(servicio.fechaEntrada), 'dd/MM/yyyy HH:mm')}
                                         </td>
-                                        <td>{servicio.idMotocicleta || 'N/A'}</td>
+                                        <td>{servicio.motocicleta?.modelo || 'N/A'}</td>
+                                        <td>{servicio.empleado?.nombres || 'N/A'}</td>
                                         <td>
-                                            <Link 
-                                                className="btn btn-primary me-2" 
+                                            <Link
+                                                className="btn btn-primary me-2"
                                                 to={`/editarservicio/${servicio.idServicio}`}
                                             >
                                                 Editar
                                             </Link>
-                                            <Button 
-                                                color="danger" 
+                                            <Button
+                                                color="danger"
                                                 onClick={() => eliminarServicio(servicio.idServicio)}
                                             >
                                                 Eliminar
@@ -142,13 +144,19 @@ export function ListaServicio() {
                                 ))
                             ) : (
                                 <tr>
-                                    <td colSpan={5} className="text-center">
+                                    <td colSpan={6} className="text-center">
                                         No hay servicios registrados
                                     </td>
                                 </tr>
                             )}
                         </tbody>
+
                     </Table>
+                    <div className="mt-4 d-flex justify-content-end">
+                        <Link to="/" className="btn btn-success mb-3">
+                            Ir al Dashboard
+                        </Link>
+                    </div>
                 </Col>
             </Row>
         </Container>

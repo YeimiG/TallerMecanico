@@ -48,7 +48,7 @@ export default function Dashboard() {
             </Link>
           </li>
             <li className="nav-item mb-2">
-            <Link to="/listaEmpleado" className="nav-link text-white">
+            <Link to="/listaFactura" className="nav-link text-white">
               Factura
             </Link>
           </li>

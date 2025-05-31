@@ -1,8 +1,14 @@
 export interface IServicio {
-  idServicio: number;
-  servicio: string;
-  precio?: number;
-  fechaEntrada: Date;
-  idMotocicleta?: number;
-  idEmpleado?: number;
+    idServicio: number;
+    servicio1: string;
+    precio: number;
+    fechaEntrada: string;
+    empleado: {
+        idEmpleado: number;
+        nombres: string;
+    };
+    motocicleta: {
+        idMotocicleta: number;
+        modelo: string;
+    };
 }
