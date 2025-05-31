@@ -59,7 +59,7 @@ export function ListaEmpleados() {
                         </thead>
                         <tbody>
                             {empleados.map((item) => (
-                                <tr key={item.IdEmpleadp}>
+                                <tr key={item.IdEmpleado}>
                                     <td>{item.Nombres}</td>
                                     <td>{item.Apellidos}</td>
                                     <td>{item.Edad}</td>
@@ -67,10 +67,10 @@ export function ListaEmpleados() {
                                     <td>{item.telefono}</td>
                                     <td>{item.IdCargo}</td>
                                     <td>
-                                        <Link className="btn btn-primary me-2" to={`/editarempleado/${item.IdEmpleadp}`}>
+                                        <Link className="btn btn-primary me-2" to={`/editarempleado/${item.IdEmpleado}`}>
                                             Editar
                                         </Link>
-                                        <Button color="danger" onClick={() => eliminar(item.IdEmpleadp!)}>
+                                        <Button color="danger" onClick={() => eliminar(item.IdEmpleado!)}>
                                             Eliminar
                                         </Button>
                                     </td>

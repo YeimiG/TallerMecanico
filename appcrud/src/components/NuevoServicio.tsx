@@ -1,9 +1,18 @@
-import { type ChangeEvent, type FormEvent, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
-import { type IServicio } from "../Interfaces/IServicio";
-import { Container, Row, Col, Form, FormGroup, Label, Input, Button } from "reactstrap";
-import { appsettings } from "../settings/appsettings";
+import { type ChangeEvent, type FormEvent, useState, useEffect } from "react"
+import { useNavigate, useParams } from "react-router-dom"
+import Swal from "sweetalert2"
+import { type IServicio } from "../Interfaces/IServicio"
+import {
+    Container,
+    Row,
+    Col,
+    Form,
+    FormGroup,
+    Label,
+    Input,
+    Button
+} from "reactstrap"
+import { appsettings } from "../settings/appsettings"
 
 const initialServicio: IServicio = {
     servicio: "",
@@ -12,40 +21,75 @@ const initialServicio: IServicio = {
     idMotocicleta: undefined,
     idEmpleado: undefined,
     idServicio: 0
-};
+}
 
 export function NuevoServicio() {
-    const [servicio, setServicio] = useState<IServicio>(initialServicio);
-    const navigate = useNavigate();
+    const [servicio, setServicio] = useState<IServicio>(initialServicio)
+    const [empleados, setEmpleados] = useState<Array<{ idEmpleado: number, nombreCompleto: string }>>([])
+    const navigate = useNavigate()
+    const { idMotocicleta } = useParams()
 
-    const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-        const { name, value } = event.target;
+    useEffect(() => {
+        if (idMotocicleta) {
+            setServicio(prev => ({
+                ...prev,
+                idMotocicleta: Number(idMotocicleta)
+            }))
+        }
+    }, [idMotocicleta])
+
+   useEffect(() => {
+    const fetchClientes = async () => {
+      try {
+        const response = await fetch(`${appsettings.apiUrl}Empleado/Lista`, {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error("No se pudieron cargar los empleados");
+        }
+
+        const data = await response.json();
+        console.log("Clientes cargados:", data); // Puedes quitarlo luego
+        setEmpleados(data);
+      } catch (error) {
+        console.error("Error al cargar clientes:", error);
+      }
+    };
+
+    fetchClientes();
+  }, []);
+
+    const handleInputChange = (event: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+        const { name, value } = event.target
         setServicio(prev => ({
             ...prev,
-            [name]: name === "precio" || name === "idMotocicleta" || name === "idEmpleado" 
-                   ? Number(value) 
-                   : value
-        }));
-    };
+            [name]: name === "precio" || name === "idMotocicleta" || name === "idEmpleado"
+                ? Number(value)
+                : value
+        }))
+    }
 
     const handleDateChange = (event: ChangeEvent<HTMLInputElement>) => {
         setServicio(prev => ({
             ...prev,
             fechaEntrada: new Date(event.target.value)
-        }));
-    };
+        }))
+    }
 
     const guardarServicio = async (e: FormEvent) => {
-        e.preventDefault();
+        e.preventDefault()
 
         try {
-            if (!servicio.servicio || !servicio.fechaEntrada) {
+            if (!servicio.servicio || !servicio.fechaEntrada || !servicio.idMotocicleta) {
                 await Swal.fire({
                     title: "Campos incompletos",
                     text: "Por favor complete todos los campos requeridos",
                     icon: "warning"
-                });
-                return;
+                })
+                return
             }
 
             const response = await fetch(`${appsettings.apiUrl}Servicio/Nuevo`, {
@@ -55,34 +99,34 @@ export function NuevoServicio() {
                     'Authorization': `Bearer ${localStorage.getItem('token') || ''}`
                 },
                 body: JSON.stringify(servicio)
-            });
+            })
 
             if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.message || "Error al guardar el servicio");
+                const errorData = await response.json()
+                throw new Error(errorData.message || "Error al guardar el servicio")
             }
 
             await Swal.fire({
                 title: "Éxito",
                 text: "Servicio creado correctamente",
                 icon: "success"
-            });
+            })
 
-            navigate("/listaservicios");
+            navigate("/listaservicios")
 
         } catch (error) {
-            console.error("Error:", error);
+            console.error("Error:", error)
             Swal.fire({
                 title: "Error",
                 text: error instanceof Error ? error.message : "Error al guardar el servicio",
                 icon: "error"
-            });
+            })
         }
-    };
+    }
 
     const volver = () => {
-        navigate(-1);
-    };
+        navigate(-1)
+    }
 
     return (
         <Container className="mt-5">
@@ -128,16 +172,26 @@ export function NuevoServicio() {
                                 name="idMotocicleta"
                                 onChange={handleInputChange}
                                 value={servicio.idMotocicleta || ""}
+                                readOnly={!!idMotocicleta}
                             />
                         </FormGroup>
                         <FormGroup>
-                            <Label>ID Empleado</Label>
+                            <Label for="idEmpleado">Empleado</Label>
                             <Input
-                                type="number"
+                                type="select"
                                 name="idEmpleado"
+                                id="idEmpleado"
                                 onChange={handleInputChange}
-                                value={servicio.idEmpleado || ""}
-                            />
+                                value={servicio.idEmpleado ?? ""}
+                                required
+                            >
+                                <option value="">Seleccione el empleado</option>
+                                {empleados.map((empleado) => (
+                                    <option key={empleado.idEmpleado} value={empleado.idEmpleado}>
+                                        {empleado.nombreCompleto}
+                                    </option>
+                                ))}
+                            </Input>
                         </FormGroup>
                         <div className="mt-4">
                             <Button color="primary" type="submit" className="me-3">
@@ -151,5 +205,5 @@ export function NuevoServicio() {
                 </Col>
             </Row>
         </Container>
-    );
+    )
 }

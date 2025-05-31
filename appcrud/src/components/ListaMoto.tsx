@@ -31,7 +31,9 @@ export function ListaMoto() {
             confirmButtonText: "Sí, eliminar"
         }).then(async (result) => {
             if (result.isConfirmed) {
-                const response = await fetch(`${appsettings.apiUrl}Motocicleta/Eliminar/${id}`, { method: "DELETE" })
+                const response = await fetch(`${appsettings.apiUrl}Motocicleta/Eliminar/${id}`, { 
+                    method: "DELETE" 
+                })
                 if (response.ok) await obtenerMotos()
             }
         })
@@ -43,7 +45,9 @@ export function ListaMoto() {
                 <Col sm={{ size: 10, offset: 1 }}>
                     <h4>Lista de Motocicletas</h4>
                     <hr />
-                    <Link className="btn btn-success mb-3" to="/nuevamoto/">Nueva Motocicleta</Link>
+                    <Link className="btn btn-success mb-3" to="/nuevamoto">
+                        Nueva Motocicleta
+                    </Link>
 
                     <Table bordered hover responsive>
                         <thead>
@@ -63,13 +67,22 @@ export function ListaMoto() {
                                     <td>{item.anio}</td>
                                     <td>{item.idCliente ?? "Sin asignar"}</td>
                                     <td>
-                                        <Link className="btn btn-primary me-2" to={`/editarmoto/${item.idMotocicleta}`}>
+                                        <Link 
+                                            className="btn btn-primary me-2" 
+                                            to={`/editarmoto/${item.idMotocicleta}`}
+                                        >
                                             Editar
                                         </Link>
-                                        <Button color="danger" onClick={() => eliminar(item.idMotocicleta!)}>
+                                        <Button 
+                                            color="danger" 
+                                            onClick={() => eliminar(item.idMotocicleta!)}
+                                        >
                                             Eliminar
                                         </Button>
-                                        <Link className="btn btn-primary me-2" to={`/nuevoservicio/${item.idMotocicleta}`}>
+                                        <Link 
+                                            className="btn btn-info ms-2" 
+                                            to={`/nuevoservicio/${item.idMotocicleta}`}
+                                        >
                                             Agregar Servicio
                                         </Link>
                                     </td>
@@ -77,10 +90,8 @@ export function ListaMoto() {
                             ))}
                         </tbody>
                     </Table>
-
                 </Col>
             </Row>
-            
         </Container>
     )
 }

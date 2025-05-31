@@ -42,6 +42,16 @@ export default function Dashboard() {
               Empleados
             </Link>
           </li>
+            <li className="nav-item mb-2">
+            <Link to="/listaCargos" className="nav-link text-white">
+              Cargos
+            </Link>
+          </li>
+            <li className="nav-item mb-2">
+            <Link to="/listaEmpleado" className="nav-link text-white">
+              Factura
+            </Link>
+          </li>
         </ul>
       </div>
 
