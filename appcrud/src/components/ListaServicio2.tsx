@@ -6,7 +6,7 @@ import type { IServicio } from "../Interfaces/IServicio";
 import { Container, Row, Col, Table, Button } from "reactstrap";
 import { format } from "date-fns"; // Para formatear fechas
 
-export function ListaServicio() {
+export function ListaServicio2() {
     const [servicios, setServicios] = useState<IServicio[]>([]);
     const [cargando, setCargando] = useState(true);
 
@@ -41,47 +41,6 @@ export function ListaServicio() {
         obtenerServicios();
     }, []);
 
-    const eliminarServicio = (id: number) => {
-        Swal.fire({
-            title: "¿Estás seguro?",
-            text: "¡Esta acción eliminará el servicio permanentemente!",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Sí, eliminar",
-            cancelButtonText: "Cancelar"
-        }).then(async (result) => {
-            if (result.isConfirmed) {
-                try {
-                    const response = await fetch(`${appsettings.apiUrl}Servicio/Eliminar/${id}`, {
-                        method: "DELETE",
-                        headers: {
-                            Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
-                        },
-                    });
-
-                    if (!response.ok) {
-                        throw new Error("Error al eliminar servicio");
-                    }
-
-                    await Swal.fire({
-                        title: "Eliminado!",
-                        text: "El servicio ha sido eliminado.",
-                        icon: "success",
-                    });
-
-                    obtenerServicios();
-                } catch (error) {
-                    Swal.fire({
-                        title: "Error",
-                        text: "No se pudo eliminar el servicio",
-                        icon: "error",
-                    });
-                }
-            }
-        });
-    };
 
     if (cargando) {
         return (
@@ -100,7 +59,7 @@ export function ListaServicio() {
                 <Col sm={{ size: 10, offset: 1 }}>
                     <h4>Lista de Servicios</h4>
                     <hr />
-                    <Link className="btn btn-success mb-3" to="/nuevoservicio">
+                    <Link className="btn btn-success mb-3" to="/nuevoservicio2">
                         Nuevo Servicio
                     </Link>
 
@@ -133,12 +92,7 @@ export function ListaServicio() {
                                             >
                                                 Editar
                                             </Link>
-                                            <Button
-                                                color="danger"
-                                                onClick={() => eliminarServicio(servicio.idServicio)}
-                                            >
-                                                Eliminar
-                                            </Button>
+                                            
                                         </td>
                                     </tr>
                                 ))
@@ -153,7 +107,7 @@ export function ListaServicio() {
 
                     </Table>
                     <div className="mt-4 d-flex justify-content-end">
-                        <Link to="/dashboard" className="btn btn-success mb-3">
+                        <Link to="/dashboard2" className="btn btn-success mb-3">
                             Ir al Dashboard
                         </Link>
                     </div>

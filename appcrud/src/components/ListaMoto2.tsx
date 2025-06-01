@@ -5,7 +5,7 @@ import Swal from "sweetalert2"
 import type { IMoto } from "../Interfaces/IMotos"
 import { Container, Row, Col, Table, Button } from "reactstrap"
 
-export function ListaMoto() {
+export function ListaMoto2() {
     const [motos, setMotos] = useState<IMoto[]>([])
 
     const obtenerMotos = async () => {
@@ -20,24 +20,6 @@ export function ListaMoto() {
         obtenerMotos()
     }, [])
 
-    const eliminar = (id: number) => {
-        Swal.fire({
-            title: "¿Estás seguro?",
-            text: "¡Esta acción eliminará la motocicleta!",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Sí, eliminar"
-        }).then(async (result) => {
-            if (result.isConfirmed) {
-                const response = await fetch(`${appsettings.apiUrl}Motocicleta/Eliminar/${id}`, {
-                    method: "DELETE"
-                })
-                if (response.ok) await obtenerMotos()
-            }
-        })
-    }
 
     return (
         <Container className="mt-5">
@@ -45,7 +27,7 @@ export function ListaMoto() {
                 <Col sm={{ size: 10, offset: 1 }}>
                     <h4>Lista de Motocicletas</h4>
                     <hr />
-                    <Link className="btn btn-success mb-3" to="/nuevamoto">
+                    <Link className="btn btn-success mb-3" to="/nuevamoto2">
                         Nueva Motocicleta
                     </Link>
 
@@ -73,12 +55,6 @@ export function ListaMoto() {
                                         >
                                             Editar
                                         </Link>
-                                        <Button
-                                            color="danger"
-                                            onClick={() => eliminar(item.idMotocicleta!)}
-                                        >
-                                            Eliminar
-                                        </Button>
                                         <Link
                                             className="btn btn-info ms-2"
                                             to={`/nuevoservicio/${item.idMotocicleta}`}
@@ -91,7 +67,7 @@ export function ListaMoto() {
                         </tbody>
                     </Table>
                     <div className="mt-4 d-flex justify-content-end">
-                        <Link to="/dashboard" className="btn btn-success mb-3">
+                        <Link to="/dashboard2" className="btn btn-success mb-3">
                             Ir al Dashboard
                         </Link>
                     </div>

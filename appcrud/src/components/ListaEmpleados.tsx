@@ -89,7 +89,7 @@ export function ListaEmpleado() {
                         </tbody>
                     </Table>
                     <div className="mt-4 d-flex justify-content-end">
-                        <Link to="/" className="btn btn-success mb-3">
+                        <Link to="/dashboard" className="btn btn-success mb-3">
                             Ir al Dashboard
                         </Link>
                     </div>
