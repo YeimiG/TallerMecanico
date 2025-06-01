@@ -58,7 +58,7 @@ export function EditarMoto() {
         setClientes(clientesData);
 
         // Cargar datos de la moto
-        const motoResponse = await fetch(`${appsettings.apiUrl}Motocicleta/${id}`, {
+        const motoResponse = await fetch(`${appsettings.apiUrl}Motocicleta/Obtener/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
           },
@@ -70,12 +70,20 @@ export function EditarMoto() {
 
         const motoData = await motoResponse.json();
         
-        // Validar datos recibidos
-        if (!motoData.idMotocicleta || !motoData.marca || !motoData.modelo) {
+        // Asegurar compatibilidad de nombres de propiedades
+        const motoFormateada: IMoto = {
+          idMotocicleta: motoData.idMotocicleta || motoData.IdMotocicleta,
+          marca: motoData.marca || motoData.Marca,
+          modelo: motoData.modelo || motoData.Modelo,
+          anio: motoData.anio || motoData.Anio,
+          idCliente: motoData.idCliente || motoData.IdCliente
+        };
+        
+        if (!motoFormateada.idMotocicleta || !motoFormateada.marca || !motoFormateada.modelo) {
           throw new Error("Datos de motocicleta incompletos");
         }
         
-        setMoto(motoData);
+        setMoto(motoFormateada);
       } catch (error) {
         console.error("Error al cargar datos:", error);
         setErrorCarga(error instanceof Error ? error.message : "Error desconocido");
@@ -102,7 +110,7 @@ export function EditarMoto() {
     e.preventDefault();
 
     try {
-      if (!moto.marca || !moto.modelo || !moto.anio || !moto.idCliente) {
+      if (!moto.marca || !moto.modelo || !moto.anio || moto.idCliente === undefined) {
         await Swal.fire({
           title: "Campos incompletos",
           text: "Por favor complete todos los campos requeridos",
@@ -118,13 +126,22 @@ export function EditarMoto() {
         didOpen: () => Swal.showLoading()
       });
       
+      // Preparar datos para enviar al backend
+      const datosActualizacion = {
+        IdMotocicleta: moto.idMotocicleta,
+        Marca: moto.marca,
+        Modelo: moto.modelo,
+        Anio: moto.anio,
+        IdCliente: moto.idCliente
+      };
+      
       const response = await fetch(`${appsettings.apiUrl}Motocicleta/Editar`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
         },
-        body: JSON.stringify(moto),
+        body: JSON.stringify(datosActualizacion),
       });
 
       if (!response.ok) {
@@ -214,6 +231,8 @@ export function EditarMoto() {
                 onChange={handleInputChange}
                 value={moto.anio}
                 required
+                min="1900"
+                max={new Date().getFullYear()}
               />
             </FormGroup>
 
