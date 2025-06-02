@@ -71,7 +71,7 @@ export function ListaCargos() {
                         </tbody>
                     </Table>
                     <div className="mt-4 d-flex justify-content-end">
-                        <Link to="/dashboard" className="btn btn-success mb-3">
+                        <Link to="/" className="btn btn-success mb-3">
                             Ir al Dashboard
                         </Link>
                     </div>

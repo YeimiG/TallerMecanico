@@ -59,7 +59,7 @@ export function NuevoCliente() {
         });
 
         // Redirigir a nueva moto con el idCliente retornado
-       navigate("/");
+       navigate("/listacliente");
 
     } catch (error) {
         console.error("Error:", error);

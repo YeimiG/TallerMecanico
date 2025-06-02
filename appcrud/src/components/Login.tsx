@@ -16,7 +16,7 @@ export default function Login() {
     }
 
     if (email === "jefe" && password === "admin") {
-      navigate("/dashboard");
+      navigate("/");
     } else if (email === "recepcionista" && password === "recep") {
       navigate("/dashboard2");
     } else {

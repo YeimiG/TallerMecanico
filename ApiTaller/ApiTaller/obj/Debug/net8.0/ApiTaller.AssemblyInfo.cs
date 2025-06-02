@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiTaller")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79a7bdbbe9c0cd4a6613e01d549d3ba03549e2b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0adc5ff6855e40653e488da6d01034ca8003bbe5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiTaller")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiTaller")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
