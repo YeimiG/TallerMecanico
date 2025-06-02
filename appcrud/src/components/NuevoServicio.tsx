@@ -78,58 +78,37 @@ export function NuevoServicio() {
         }))
     }
 
-    const guardarServicio = async (e: FormEvent) => {
-        e.preventDefault()
+    const guardarServicio = async () => {
+  const nuevoServicio = {
+    servicio1: servicio.servicio1,
+    precio: servicio.precio,
+    fechaEntrada: new Date(servicio.fechaEntrada).toISOString(), // ✅ IMPORTANTE
+    idMotocicleta: servicio.idMotocicleta,
+    idEmpleado: servicio.idEmpleado,
+  };
 
-        try {
-            if (!servicio.servicio1 || !servicio.idMotocicleta || !servicio.idEmpleado) {
-                await Swal.fire({
-                    title: "Campos incompletos",
-                    text: "Por favor complete todos los campos requeridos",
-                    icon: "warning"
-                })
-                return
-            }
+  try {
+    const response = await fetch("http://localhost:5191/api/Servicio", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(nuevoServicio),
+    });
 
-            const servicioToSend = {
-                Servicio1: servicio.servicio1,
-                Precio: servicio.precio,
-                FechaEntrada: servicio.fechaEntrada.toISOString(),
-                IdMotocicleta: servicio.idMotocicleta,
-                IdEmpleado: servicio.idEmpleado
-            }
-
-            const response = await fetch(`${appsettings.apiUrl}Servicio/Nuevo`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${localStorage.getItem('token') || ''}`
-                },
-                body: JSON.stringify(servicioToSend)
-            })
-
-            if (!response.ok) {
-                const errorData = await response.json()
-                throw new Error(errorData.message || "Error al guardar el servicio")
-            }
-
-            await Swal.fire({
-                title: "Éxito",
-                text: "Servicio creado correctamente",
-                icon: "success"
-            })
-
-            navigate("/listaservicios")
-
-        } catch (error) {
-            console.error("Error:", error)
-            Swal.fire({
-                title: "Error",
-                text: error instanceof Error ? error.message : "Error al guardar el servicio",
-                icon: "error"
-            })
-        }
+    if (!response.ok) {
+      const error = await response.text();
+      console.error("Error al guardar:", error);
+    } else {
+      const data = await response.json();
+      console.log("Servicio guardado con éxito:", data);
+       navigate("/listaservicios")
     }
+  } catch (err) {
+    console.error("Error de red:", err);
+  }
+};
+
 
     const volver = () => {
         navigate(-1)
